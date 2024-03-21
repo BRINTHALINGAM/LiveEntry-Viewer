@@ -1,0 +1,39 @@
+
+<!-- <div class="search-container">
+    <input type="text" [(ngModel)]="text">
+    <button (click)="Onsearch()">Search</button>
+  </div> -->
+  
+  <table >
+    <thead >
+     <tr>
+      <td >NAME</td>
+      <td>ID</td>
+      <td>ROLE</td> 
+     </tr>
+     
+    </thead>
+  
+    <tbody *ngFor="let item of receivedData">
+     <tr>
+      <td>
+        {{item.name}}
+      </td>
+  
+      <td>
+        {{item.id}}
+      </td>
+      <td>
+        {{item.role}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  
+  
+  <!-- <div class="pagination-container">
+    <button (click)="LastPage()" [disabled]="currentPage == 1">Previous</button>
+    <span>{{ currentPage }} of {{ totalPage }}</span>
+    <button (click)="NextPage()" [disabled]="currentPage == totalPage">Next</button>
+  </div>
+    -->
